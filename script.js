@@ -167,6 +167,7 @@ window.addEventListener("scroll", function () {
 
 //--------- for contact scrolling animation -----------
 
+if (window.innerWidth >= 600) {
 const progressBarElementss = document.querySelectorAll(".animate-on-scroll");
 
 function AnimateProgressBarOnScroll() {
@@ -194,3 +195,4 @@ AnimateProgressBarOnScroll();
 
 // Run the animation when scrolling
 window.addEventListener("scroll", AnimateProgressBarOnScroll);
+}
